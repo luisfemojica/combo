@@ -3,17 +3,17 @@ import "./App.css";
 
 //const [checked, setChecked] = useState(true);
 
-export function Autocomplete({ handleSelection, top, listDivsiones }) {
-  return listItems(listDivsiones, top, handleSelection);
+export function Autocomplete({ top, listDivsiones }) {
+  return listItems(listDivsiones, top);
 }
 
-function listItems(list, top, handleSelection) {
+function listItems(list, top) {
   return (
     <div className="autocomplete-panel" style={{ top }}>
       <ul className="autocomplete-items">
         {list.map((hit) => (
           <li className="autocomplete-item" key={hit.id}>
-            <Item hit={hit} handleSelection={handleSelection} />
+            <Item hit={hit} />
           </li>
         ))}
       </ul>
@@ -21,7 +21,7 @@ function listItems(list, top, handleSelection) {
   );
 }
 
-function Item({ hit, handleSelection }) {
+function Item({ hit }) {
   return (
     <div className="account-body">
       <div className="account-name">
