@@ -135,13 +135,10 @@ function App() {
     <main className="container">
       <section className="box">
         <div className="box-body">
-          <aside id="LabelDivsiones">
-            <label>Divisiones:</label>
-          </aside>
           <div className="box-compose">
             <form>
               <textarea
-                id="SelectDivision"
+                // id="SelectDivision"
                 placeholder="Seleccione una división"
                 className="box-textbox"
                 onClick={(e) => {
@@ -165,12 +162,6 @@ function App() {
             )}
           </div>
         </div>
-
-        <footer className="box-footer">
-          <button type="submit" className="tweet-button">
-            Guardar
-          </button>
-        </footer>
       </section>
     </main>
   );

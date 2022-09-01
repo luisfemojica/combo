@@ -34,7 +34,7 @@ textarea {
 body {
   height: 100vh;
   width: 100vw;
-  background-color: #444a54;
+  background-color: #ffffff;
   padding: 1.5rem;
 }
 
@@ -42,12 +42,12 @@ body {
   margin-left: auto;
   margin-right: auto;
   width: 100%;
-  max-width: 36rem;
+  /* max-width: 36rem; */
 }
 
 .box {
   border-radius: 0.5rem;
-  background-color: rgba(17, 24, 39, 1);
+  background-color: rgb(255, 255, 255);
   box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
     0 10px 10px -5px rgba(0, 0, 0, 0.04), 0 1px 3px 0 rgba(0, 0, 0, 0.1),
     0 1px 2px 0 rgba(0, 0, 0, 0.06);
@@ -59,6 +59,7 @@ body {
   resize: none;
   font-size: 1.2rem;
   background-color: transparent;
+  color: #000;
 }
 
 .box-textbox::-webkit-input-placeholder,
@@ -110,9 +111,9 @@ body {
   position: absolute;
   left: 0px;
   width: 100%;
-  max-width: 20rem;
+  /* max-width: 20rem; */
   border-radius: 0.5rem;
-  background-color: rgba(17, 24, 39, 1);
+  background-color: rgb(255, 255, 255);
   box-shadow: 0 20px 25px -5px rgba(255, 255, 255, 0.1),
     0 10px 10px -5px rgba(255, 255, 255, 0.04),
     0 1px 3px 0 rgba(255, 255, 255, 0.1), 0 1px 2px 0 rgba(255, 255, 255, 0.06);
@@ -164,7 +165,7 @@ body {
 }
 
 .autocomplete-item:hover {
-  background: #000;
+  background: rgb(247, 247, 247);
 }
 
 .autocomplete-item > :not([hidden]) ~ :not([hidden]) {
@@ -173,7 +174,7 @@ body {
 }
 
 .autocomplete-item {
-  padding-left: 1.5rem;
+  /* padding-left: 1.5rem; */
   padding-right: 1.5rem;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
@@ -195,7 +196,7 @@ body {
 
 .account-name {
   font-weight: 600;
-  color: rgba(255, 255, 255, 1);
+  color: rgb(0, 0, 0);
 }
 
 .account-highlighted {
