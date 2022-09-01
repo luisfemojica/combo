@@ -88,7 +88,7 @@ function App() {
       checkRelation: false,
       nombreDivision: "Personal 1",
       statusSwitch: "Activado",
-      fechaInicial: "11/07/2020",
+      fechaInicial: "2018-07-22",
       fechaFinal: "29/07/2020",
       handleClick: (e, idDivision) => {
         console.log(e.target.checked);
@@ -98,6 +98,20 @@ function App() {
           listDivsiones.map((item) => {
             if (item.idDivision === idDivision) {
               item.checkRelation = select;
+            }
+            return item;
+          })
+        );
+        handleSelection(listDivsiones);
+      },
+      selectFechaInicial: (e, idDivision) => {
+        console.log(e.target.value);
+        console.log(idDivision);
+        let select = e.target.value;
+        setlistDivsiones(
+          listDivsiones.map((item) => {
+            if (item.idDivision === idDivision) {
+              item.fechaInicial = select;
             }
             return item;
           })
@@ -126,13 +140,27 @@ function App() {
         );
         handleSelection(listDivsiones);
       },
+      selectFechaInicial: (e, idDivision) => {
+        console.log(e.target.value);
+        console.log(idDivision);
+        let select = e.target.value;
+        setlistDivsiones(
+          listDivsiones.map((item) => {
+            if (item.idDivision === idDivision) {
+              item.fechaInicial = select;
+            }
+            return item;
+          })
+        );
+        handleSelection(listDivsiones);
+      },
     },
     {
       idDivision: "3",
       checkRelation: false,
       nombreDivision: "Personal 3",
       statusSwitch: "Activado",
-      fechaInicial: "11/07/2020",
+      fechaInicial: "2018-07-22",
       fechaFinal: "29/07/2020",
       handleClick: (e, idDivision) => {
         console.log(e.target.checked);
@@ -142,6 +170,20 @@ function App() {
           listDivsiones.map((item) => {
             if (item.idDivision === idDivision) {
               item.checkRelation = select;
+            }
+            return item;
+          })
+        );
+        handleSelection(listDivsiones);
+      },
+      selectFechaInicial: (e, idDivision) => {
+        console.log(e.target.value);
+        console.log(idDivision);
+        let select = e.target.value;
+        setlistDivsiones(
+          listDivsiones.map((item) => {
+            if (item.idDivision === idDivision) {
+              item.fechaInicial = select;
             }
             return item;
           })
@@ -154,7 +196,7 @@ function App() {
       checkRelation: false,
       nombreDivision: "Preferente 1",
       statusSwitch: "Activado",
-      fechaInicial: "11/07/2020",
+      fechaInicial: "2018-07-22",
       fechaFinal: "29/07/2020",
       handleClick: (e, idDivision) => {
         console.log(e.target.checked);
@@ -170,13 +212,41 @@ function App() {
         );
         handleSelection(listDivsiones);
       },
+      selectFechaInicial: (e, idDivision) => {
+        console.log(e.target.value);
+        console.log(idDivision);
+        let select = e.target.value;
+        setlistDivsiones(
+          listDivsiones.map((item) => {
+            if (item.idDivision === idDivision) {
+              item.fechaInicial = select;
+            }
+            return item;
+          })
+        );
+        handleSelection(listDivsiones);
+      },
+      selectFechaInicial: (e, idDivision) => {
+        console.log(e.target.value);
+        console.log(idDivision);
+        let select = e.target.value;
+        setlistDivsiones(
+          listDivsiones.map((item) => {
+            if (item.idDivision === idDivision) {
+              item.fechaInicial = select;
+            }
+            return item;
+          })
+        );
+        handleSelection(listDivsiones);
+      }
     },
     {
       idDivision: "5",
       checkRelation: false,
       nombreDivision: "Preferente 2",
       statusSwitch: "Activado",
-      fechaInicial: "11/07/2020",
+      fechaInicial: "2018-07-22",
       fechaFinal: "29/07/2020",
       handleClick: (e, idDivision) => {
         console.log(e.target.checked);
@@ -192,13 +262,27 @@ function App() {
         );
         handleSelection(listDivsiones);
       },
+      selectFechaInicial: (e, idDivision) => {
+        console.log(e.target.value);
+        console.log(idDivision);
+        let select = e.target.value;
+        setlistDivsiones(
+          listDivsiones.map((item) => {
+            if (item.idDivision === idDivision) {
+              item.fechaInicial = select;
+            }
+            return item;
+          })
+        );
+        handleSelection(listDivsiones);
+      }
     },
     {
       idDivision: "6",
       checkRelation: false,
       nombreDivision: "Preferente 3",
       statusSwitch: "Activado",
-      fechaInicial: "11/07/2020",
+      fechaInicial: "2018-07-22",
       fechaFinal: "29/07/2020",
       handleClick: (e, idDivision) => {
         console.log(e.target.checked);
@@ -214,13 +298,27 @@ function App() {
         );
         handleSelection(listDivsiones);
       },
+      selectFechaInicial: (e, idDivision) => {
+        console.log(e.target.value);
+        console.log(idDivision);
+        let select = e.target.value;
+        setlistDivsiones(
+          listDivsiones.map((item) => {
+            if (item.idDivision === idDivision) {
+              item.fechaInicial = select;
+            }
+            return item;
+          })
+        );
+        handleSelection(listDivsiones);
+      }
     },
     {
       idDivision: "7",
       checkRelation: false,
       nombreDivision: "Activaciones In",
       statusSwitch: "Activado",
-      fechaInicial: "11/07/2020",
+      fechaInicial: "2018-07-22",
       fechaFinal: "29/07/2020",
       handleClick: (e, idDivision) => {
         console.log(e.target.checked);
@@ -236,13 +334,27 @@ function App() {
         );
         handleSelection(listDivsiones);
       },
+      selectFechaInicial: (e, idDivision) => {
+        console.log(e.target.value);
+        console.log(idDivision);
+        let select = e.target.value;
+        setlistDivsiones(
+          listDivsiones.map((item) => {
+            if (item.idDivision === idDivision) {
+              item.fechaInicial = select;
+            }
+            return item;
+          })
+        );
+        handleSelection(listDivsiones);
+      }
     },
     {
       idDivision: "8",
       checkRelation: false,
       nombreDivision: "Back Office AYC",
       statusSwitch: "Activado",
-      fechaInicial: "11/07/2020",
+      fechaInicial: "2018-07-22",
       fechaFinal: "29/07/2020",
       handleClick: (e, idDivision) => {
         console.log(e.target.checked);
@@ -258,13 +370,27 @@ function App() {
         );
         handleSelection(listDivsiones);
       },
+      selectFechaInicial: (e, idDivision) => {
+        console.log(e.target.value);
+        console.log(idDivision);
+        let select = e.target.value;
+        setlistDivsiones(
+          listDivsiones.map((item) => {
+            if (item.idDivision === idDivision) {
+              item.fechaInicial = select;
+            }
+            return item;
+          })
+        );
+        handleSelection(listDivsiones);
+      }
     },
     {
       idDivision: "9",
       checkRelation: false,
       nombreDivision: "Preferencial Fisicas",
       statusSwitch: "Activado",
-      fechaInicial: "11/07/2020",
+      fechaInicial: "2018-07-22",
       fechaFinal: "29/07/2020",
       handleClick: (e, idDivision) => {
         console.log(e.target.checked);
@@ -280,13 +406,27 @@ function App() {
         );
         handleSelection(listDivsiones);
       },
+      selectFechaInicial: (e, idDivision) => {
+        console.log(e.target.value);
+        console.log(idDivision);
+        let select = e.target.value;
+        setlistDivsiones(
+          listDivsiones.map((item) => {
+            if (item.idDivision === idDivision) {
+              item.fechaInicial = select;
+            }
+            return item;
+          })
+        );
+        handleSelection(listDivsiones);
+      }
     },
     {
       idDivision: "10",
       checkRelation: false,
       nombreDivision: "Cobranza TDC Preventiva",
       statusSwitch: "Activado",
-      fechaInicial: "11/07/2020",
+      fechaInicial: "2018-07-22",
       fechaFinal: "29/07/2020",
       handleClick: (e, idDivision) => {
         console.log(e.target.checked);
@@ -302,15 +442,27 @@ function App() {
         );
         handleSelection(listDivsiones);
       },
+      selectFechaInicial: (e, idDivision) => {
+        console.log(e.target.value);
+        console.log(idDivision);
+        let select = e.target.value;
+        setlistDivsiones(
+          listDivsiones.map((item) => {
+            if (item.idDivision === idDivision) {
+              item.fechaInicial = select;
+            }
+            return item;
+          })
+        );
+        handleSelection(listDivsiones);
+      }
     },
-
-
     {
       idDivision: "11",
       checkRelation: false,
       nombreDivision: "Personal 1",
       statusSwitch: "Activado",
-      fechaInicial: "11/07/2020",
+      fechaInicial: "2018-07-22",
       fechaFinal: "29/07/2020",
       handleClick: (e, idDivision) => {
         console.log(e.target.checked);
@@ -326,6 +478,20 @@ function App() {
         );
         handleSelection(listDivsiones);
       },
+      selectFechaInicial: (e, idDivision) => {
+        console.log(e.target.value);
+        console.log(idDivision);
+        let select = e.target.value;
+        setlistDivsiones(
+          listDivsiones.map((item) => {
+            if (item.idDivision === idDivision) {
+              item.fechaInicial = select;
+            }
+            return item;
+          })
+        );
+        handleSelection(listDivsiones);
+      }
     },
     {
       idDivision: "12",
@@ -348,13 +514,27 @@ function App() {
         );
         handleSelection(listDivsiones);
       },
+      selectFechaInicial: (e, idDivision) => {
+        console.log(e.target.value);
+        console.log(idDivision);
+        let select = e.target.value;
+        setlistDivsiones(
+          listDivsiones.map((item) => {
+            if (item.idDivision === idDivision) {
+              item.fechaInicial = select;
+            }
+            return item;
+          })
+        );
+        handleSelection(listDivsiones);
+      }
     },
     {
       idDivision: "13",
       checkRelation: false,
       nombreDivision: "Personal 3",
       statusSwitch: "Activado",
-      fechaInicial: "11/07/2020",
+      fechaInicial: "2018-07-22",
       fechaFinal: "29/07/2020",
       handleClick: (e, idDivision) => {
         console.log(e.target.checked);
@@ -370,13 +550,27 @@ function App() {
         );
         handleSelection(listDivsiones);
       },
+      selectFechaInicial: (e, idDivision) => {
+        console.log(e.target.value);
+        console.log(idDivision);
+        let select = e.target.value;
+        setlistDivsiones(
+          listDivsiones.map((item) => {
+            if (item.idDivision === idDivision) {
+              item.fechaInicial = select;
+            }
+            return item;
+          })
+        );
+        handleSelection(listDivsiones);
+      }
     },
     {
       idDivision: "14",
       checkRelation: false,
       nombreDivision: "Preferente 1",
       statusSwitch: "Activado",
-      fechaInicial: "11/07/2020",
+      fechaInicial: "2018-07-22",
       fechaFinal: "29/07/2020",
       handleClick: (e, idDivision) => {
         console.log(e.target.checked);
@@ -392,13 +586,27 @@ function App() {
         );
         handleSelection(listDivsiones);
       },
+      selectFechaInicial: (e, idDivision) => {
+        console.log(e.target.value);
+        console.log(idDivision);
+        let select = e.target.value;
+        setlistDivsiones(
+          listDivsiones.map((item) => {
+            if (item.idDivision === idDivision) {
+              item.fechaInicial = select;
+            }
+            return item;
+          })
+        );
+        handleSelection(listDivsiones);
+      }
     },
     {
       idDivision: "15",
       checkRelation: false,
       nombreDivision: "Preferente 2",
       statusSwitch: "Activado",
-      fechaInicial: "11/07/2020",
+      fechaInicial: "2018-07-22",
       fechaFinal: "29/07/2020",
       handleClick: (e, idDivision) => {
         console.log(e.target.checked);
@@ -414,13 +622,27 @@ function App() {
         );
         handleSelection(listDivsiones);
       },
+      selectFechaInicial: (e, idDivision) => {
+        console.log(e.target.value);
+        console.log(idDivision);
+        let select = e.target.value;
+        setlistDivsiones(
+          listDivsiones.map((item) => {
+            if (item.idDivision === idDivision) {
+              item.fechaInicial = select;
+            }
+            return item;
+          })
+        );
+        handleSelection(listDivsiones);
+      }
     },
     {
       idDivision: "16",
       checkRelation: false,
       nombreDivision: "Preferente 3",
       statusSwitch: "Activado",
-      fechaInicial: "11/07/2020",
+      fechaInicial: "2018-07-22",
       fechaFinal: "29/07/2020",
       handleClick: (e, idDivision) => {
         console.log(e.target.checked);
@@ -436,13 +658,27 @@ function App() {
         );
         handleSelection(listDivsiones);
       },
+      selectFechaInicial: (e, idDivision) => {
+        console.log(e.target.value);
+        console.log(idDivision);
+        let select = e.target.value;
+        setlistDivsiones(
+          listDivsiones.map((item) => {
+            if (item.idDivision === idDivision) {
+              item.fechaInicial = select;
+            }
+            return item;
+          })
+        );
+        handleSelection(listDivsiones);
+      }
     },
     {
       idDivision: "17",
       checkRelation: false,
       nombreDivision: "Activaciones In",
       statusSwitch: "Activado",
-      fechaInicial: "11/07/2020",
+      fechaInicial: "2018-07-22",
       fechaFinal: "29/07/2020",
       handleClick: (e, idDivision) => {
         console.log(e.target.checked);
@@ -458,13 +694,27 @@ function App() {
         );
         handleSelection(listDivsiones);
       },
+      selectFechaInicial: (e, idDivision) => {
+        console.log(e.target.value);
+        console.log(idDivision);
+        let select = e.target.value;
+        setlistDivsiones(
+          listDivsiones.map((item) => {
+            if (item.idDivision === idDivision) {
+              item.fechaInicial = select;
+            }
+            return item;
+          })
+        );
+        handleSelection(listDivsiones);
+      }
     },
     {
       idDivision: "18",
       checkRelation: false,
       nombreDivision: "Back Office AYC",
       statusSwitch: "Activado",
-      fechaInicial: "11/07/2020",
+      fechaInicial: "2018-07-22",
       fechaFinal: "29/07/2020",
       handleClick: (e, idDivision) => {
         console.log(e.target.checked);
@@ -480,13 +730,27 @@ function App() {
         );
         handleSelection(listDivsiones);
       },
+      selectFechaInicial: (e, idDivision) => {
+        console.log(e.target.value);
+        console.log(idDivision);
+        let select = e.target.value;
+        setlistDivsiones(
+          listDivsiones.map((item) => {
+            if (item.idDivision === idDivision) {
+              item.fechaInicial = select;
+            }
+            return item;
+          })
+        );
+        handleSelection(listDivsiones);
+      }
     },
     {
       idDivision: "19",
       checkRelation: false,
       nombreDivision: "Preferencial Fisicas",
       statusSwitch: "Activado",
-      fechaInicial: "11/07/2020",
+      fechaInicial: "2018-07-22",
       fechaFinal: "29/07/2020",
       handleClick: (e, idDivision) => {
         console.log(e.target.checked);
@@ -502,13 +766,27 @@ function App() {
         );
         handleSelection(listDivsiones);
       },
+      selectFechaInicial: (e, idDivision) => {
+        console.log(e.target.value);
+        console.log(idDivision);
+        let select = e.target.value;
+        setlistDivsiones(
+          listDivsiones.map((item) => {
+            if (item.idDivision === idDivision) {
+              item.fechaInicial = select;
+            }
+            return item;
+          })
+        );
+        handleSelection(listDivsiones);
+      }
     },
     {
       idDivision: "20",
       checkRelation: false,
       nombreDivision: "Cobranza TDC Preventiva",
       statusSwitch: "Activado",
-      fechaInicial: "11/07/2020",
+      fechaInicial: "2018-07-22",
       fechaFinal: "29/07/2020",
       handleClick: (e, idDivision) => {
         console.log(e.target.checked);
@@ -524,8 +802,21 @@ function App() {
         );
         handleSelection(listDivsiones);
       },
-    }
-
+      selectFechaInicial: (e, idDivision) => {
+        console.log(e.target.value);
+        console.log(idDivision);
+        let select = e.target.value;
+        setlistDivsiones(
+          listDivsiones.map((item) => {
+            if (item.idDivision === idDivision) {
+              item.fechaInicial = select;
+            }
+            return item;
+          })
+        );
+        handleSelection(listDivsiones);
+      }
+    },
   ];
 
   const [listDivsiones, setlistDivsiones] = useState(list);

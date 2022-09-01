@@ -24,9 +24,10 @@ function listItems(list, top) {
 function Item({ hit }) {
   return (
     <div className="account-body">
-      <div className="account-name">
-        <label>
+      <div className="account-checkbox">
+        <label className="account-checkbox">
           <input
+            className="account-checkbox"
             type="checkbox"
             id={hit.idDivision}
             defaultChecked={hit.checkRelation}
@@ -36,7 +37,17 @@ function Item({ hit }) {
         </label>
       </div>
       <div className="account-name">{hit.statusSwitch}</div>
-      <div className="account-name">{hit.fechaInicial}</div>
+      <div className="account-name">
+        <input
+          type="date"
+          id="start"
+          name="trip-start"
+          value={hit.fechaInicial}
+          // min="2018-01-01"
+          // max="2018-12-31"
+          onChange={(e) => hit.selectFechaInicial(e, hit.idDivision)}
+        />
+      </div>
       <div className="account-name">{hit.fechaFinal}</div>
     </div>
   );

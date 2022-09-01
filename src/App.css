@@ -164,7 +164,7 @@ body {
 
 .autocomplete-item {
   display: flex;
-  cursor: pointer;
+  /* cursor: pointer; */
   flex-direction: column;
   background: transparent;
   width: 100%;
@@ -198,6 +198,12 @@ body {
 .account-body > :not([hidden]) ~ :not([hidden]) {
   margin-right: calc(0.75rem * 0);
   margin-left: calc(0.75rem * calc(1 - 0));
+}
+
+.account-checkbox {
+  cursor: pointer;
+  font-weight: 600;
+  color: rgb(0, 0, 0);
 }
 
 .account-name {
